@@ -13,6 +13,26 @@ const questions = [
         question: "Which planet is known as the Red Planet?",
         answers: ["Earth", "Mars", "Jupiter", "Saturn"],
         correct: "Mars"
+    }, 
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: "Mars"
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: "Mars"
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: "Mars"
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: "Mars"
     },
     {
         question: "Who wrote 'Romeo and Juliet'?",
