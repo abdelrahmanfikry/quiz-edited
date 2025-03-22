@@ -1,6 +1,10 @@
 const questions = [
-  
-    [
+    {
+        question: "What is the capital of France?",
+        answers: ["Paris", "London", "Berlin", "Madrid"],
+        correct: "Paris"
+    },
+    
         {
             question: "Which of the following is not a component of multimedia?",
             answers: ["Text", "Audio", "Paint", "Video"],
@@ -101,11 +105,7 @@ const questions = [
             answers: ["The image is low contrast", "The image is high contrast", "The image is grayscale", "The image is monochrome"],
             correct: "The image is high contrast"
         }
-    ],  {
-        question: "What is the capital of France?",
-        answers: ["Paris", "London", "Berlin", "Madrid"],
-        correct: "Paris"
-    }
+    
 ];
 
 const questionElement = document.getElementById('question');
