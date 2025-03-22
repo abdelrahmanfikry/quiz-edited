@@ -32,8 +32,8 @@ const questions = [
         },
         {
             question: "What is the main advantage of using vector images over raster images?",
-            answers: ["They are smaller in size", "They don’t lose quality when scaled", "They are easier to create", "They support more colors"],
-            correct: "They don’t lose quality when scaled"
+            answers: ["They are smaller in size", "They dont lose quality when scaled", "They are easier to create", "They support more colors"],
+            correct: "They dont lose quality when scaled"
         },
         {
             question: "Which image format is best for digital photography due to its high compression efficiency?",
