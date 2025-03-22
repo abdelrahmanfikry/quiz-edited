@@ -5,9 +5,9 @@ const questions = [
         correct: "Paris"
     },
     {
-        question: "What is 2 + 2?",
-        answers: ["3", "4", "5", "6"],
-        correct: "4"
+        question: " Which is the following is not component of multimedia",
+        answers: ["paint", "image ", "audio", "video"],
+        correct: "paint"
     },
     {
         question: "Which planet is known as the Red Planet?",
