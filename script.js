@@ -8,17 +8,35 @@ const questions = [
         question: "What is 2 + 2?",
         answers: ["3", "4", "5", "6"],
         correct: "4"
+    },
+    {
+        question: "Which planet is known as the Red Planet?",
+        answers: ["Earth", "Mars", "Jupiter", "Saturn"],
+        correct: "Mars"
+    },
+    {
+        question: "Who wrote 'Romeo and Juliet'?",
+        answers: ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
+        correct: "William Shakespeare"
     }
 ];
 
 const questionElement = document.getElementById('question');
 const answersElement = document.getElementById('answers');
 const nextButton = document.getElementById('next-btn');
+const scoreElement = document.getElementById('score');
+const wrongAnswersElement = document.getElementById('wrong-answers');
 
 let currentQuestionIndex = 0;
+let userScore = 0;
+let wrongAnswers = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
+    userScore = 0;
+    wrongAnswers = 0;
+    scoreElement.innerText = `Score: ${userScore}`;
+    wrongAnswersElement.innerText = `Wrong Answers: ${wrongAnswers}`;
     nextButton.style.display = 'none';
     showQuestion();
 }
@@ -56,6 +74,14 @@ function selectAnswer(answer) {
         button.disabled = true; // Disable buttons after selection
     });
 
+    if (answer === correct) {
+        userScore += 1;
+        scoreElement.innerText = `Score: ${userScore}`;
+    } else {
+        wrongAnswers += 1;
+        wrongAnswersElement.innerText = `Wrong Answers: ${wrongAnswers}`;
+    }
+
     nextButton.style.display = 'block';
 }
 
@@ -64,7 +90,7 @@ nextButton.addEventListener('click', () => {
     if (currentQuestionIndex < questions.length) {
         showQuestion();
     } else {
-        alert("Quiz completed!");
+        alert(`Quiz completed! Your final score is ${userScore}/${questions.length}. Wrong answers: ${wrongAnswers}`);
         startQuiz();
     }
 });

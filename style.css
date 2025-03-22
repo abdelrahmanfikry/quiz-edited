@@ -4,9 +4,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width:auto ;
+    height: auto;
 }
 
 .quiz-container {
@@ -16,6 +19,32 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 300px;
     text-align: center;
+    margin-bottom: 20px; /* Add space between quiz and personal info */
+}
+
+#personal-info {
+    background-color: #12cff0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+}
+
+#personal-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#personal-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+#score, #wrong-answers {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 #answers button {
